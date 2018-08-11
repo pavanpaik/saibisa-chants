@@ -64,7 +64,12 @@ import {HttpClientModule, HttpClient} from '@angular/common/http';
 
 //Replace this with your own keys from console.firebase.com
 export const firebaseConfig = {
-  
+  apiKey: "AIzaSyAQMNY7WftXMSeQnFGrLO8BvLwE5H7P4jo",
+    authDomain: "saibisa-chants.firebaseapp.com",
+    databaseURL: "https://saibisa-chants.firebaseio.com",
+    projectId: "saibisa-chants",
+    storageBucket: "saibisa-chants.appspot.com",
+    messagingSenderId: "280126863686"
 };
 
 export function HttpLoaderFactory(http: HttpClient) {
