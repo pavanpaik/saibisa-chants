@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
-
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
+import { Platform } from 'ionic-angular';
+import { SplashScreen } from '@ionic-native/splash-screen';
+import { LibraryPage } from '../library/library';
+import { SearchPage } from '../search/search';
 import { HomePage } from '../home/home';
+import { MoodsPage } from '../moods/moods';
+//By Rekar Dilzar Rashid Botany +9647504051800
 
 @Component({
   templateUrl: 'tabs.html'
@@ -10,10 +13,11 @@ import { HomePage } from '../home/home';
 export class TabsPage {
 
   tab1Root = HomePage;
-  tab2Root = AboutPage;
-  tab3Root = ContactPage;
+  tab2Root = SearchPage;
+  tab3Root = LibraryPage;
+  tab4Root = MoodsPage;
 
-  constructor() {
+  constructor(platform: Platform, splashScreen: SplashScreen) {
 
   }
 }
